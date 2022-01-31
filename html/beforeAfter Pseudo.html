@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before & After psecudo Selector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+
+        header::before {
+            background: url('https://images.unsplash.com/photo-1643293383951-0755fda59471?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1NXx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        top: 0;
+            left: 0;
+             opacity: 0.5;
+        }
+
+
+
+
+      .navigation{
+            display: flex;
+            font-size: 18px;
+
+
+        }
+
+        nav li {
+            list-style: none;
+            padding: 15px 30px;
+
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: white;
+           
+        }
+
+        nav li a:hover {
+            color: yellow;
+        }
+
+
+        section {
+            height: 344px;
+            /* border: 2px solid red; */
+            margin: 5px 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: -1;
+
+
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-family: 'Supermercado One', cursive;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navigation">
+            <li> <a href="#"> Home</a> </li>
+            <li> <a href="#"> About</a> </li>
+            <li> <a href="#"> Services</a> </li>
+            <li> <a href="#"> Contact Us</a> </li>
+        </ul>
+    </nav>
+    <header>
+        <section>
+            <h1>Welcome to Coding World</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit magnam necessitatibus ea eos aut
+                consequuntur nemo et natus voluptates officiis doloribus tempora quos consectetur omnis recusandae fugit
+                aspernatur ex qui molestiae, perspiciatis cumque perferendis. Corporis ratione, cum maiores nam facilis
+                quasi modi ut officia!</p>
+        </section>
+
+    </header>
+</body>
+
+</html>
